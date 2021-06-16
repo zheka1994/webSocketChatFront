@@ -7,6 +7,14 @@
         border: 0.5px solid $border-color;
         border-radius: 4px;
         min-width: 241px;
+
+        &_full-width {
+            width: 100%;
+        }
+
+        &:focus {
+            @include setAlpha(border-color, $violet, 1);
+        }
     }
 
     &__icon {

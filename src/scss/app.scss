@@ -35,6 +35,7 @@ body {
 }
 
 @import './variables';
+@import './mixins';
 @import './blocks/container';
 @import './blocks/friends';
 @import './blocks/avatar';
@@ -47,3 +48,5 @@ body {
 @import './blocks/current-friend';
 @import './blocks/social';
 @import './blocks/contacts';
+@import './blocks/auth';
+@import './blocks/tabs';

@@ -1,0 +1,18 @@
+.tabs {
+    display: flex;
+
+    @include mobile {
+        display: none;
+    }
+
+    &__item {
+        padding: 40px 100px;
+        background-color: rgb(190, 190, 190);
+        cursor: pointer;
+        
+        &_active {
+            background-color: $white;
+            cursor: default;
+        }
+    }
+}
