@@ -1,6 +1,6 @@
 .auth {
     &__header {
-        height: 226px;
+        height: 200px;
         background: linear-gradient(#1e1e20, #25272A);
 
         @include mobile-xs {
@@ -10,7 +10,7 @@
 
     &__form {
         position: fixed;
-        top: 114px;
+        top: 128px;
         left: 50%;
         transform: translateX(-50%);
 
@@ -22,7 +22,7 @@
     &__form-body {
         background-color: $white;
         display: none;
-        padding: 30px;
+        padding: 10px;
 
         &_active {
             display: block;

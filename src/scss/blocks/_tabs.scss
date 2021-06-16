@@ -1,14 +1,14 @@
 .tabs {
     display: flex;
 
-    @include mobile {
-        display: none;
-    }
-
     &__item {
-        padding: 40px 100px;
         background-color: rgb(190, 190, 190);
         cursor: pointer;
+        flex: 0 0 auto;
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
         
         &_active {
             background-color: $white;
