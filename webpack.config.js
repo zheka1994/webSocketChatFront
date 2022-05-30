@@ -43,7 +43,7 @@ const config = {
             filename: '[name][contenthash].css'
         }),
         new HtmlWebpackPlugin({
-            template: __dirname + '/src/templates/login.ejs'
+            template: __dirname + '/src/templates/main.ejs'
         }),
         new CopyPlugin({
             patterns: [
