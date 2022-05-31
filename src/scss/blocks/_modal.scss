@@ -14,17 +14,28 @@
     &__content {
         margin: auto;
         width: 50%;
-        min-width: 250px;
         background: #cfcfd7;
-        padding: 20px;
-    }
+        padding: 20px;  
+        min-width: 278px;
 
-    &__row {
-        display: flex;
-        align-items: center;
-    }
+        &-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-    &__column {
-        width: 40%;
+        &-row + &-row {
+            margin-top: 10px;
+        }
+
+        &-column {
+            &_small {
+                flex-grow: 1;
+                flex-basis: 200px;
+            }
+            &_big {
+                flex-grow: 3;
+            }
+        }
     }
 }
