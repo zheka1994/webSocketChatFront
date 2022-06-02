@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <title>Chat</title>
 </head>
 <body>
     <div class="container">
         <aside class="aside aside_left">
             <div class="aside__search">
-                <div class="input"><input class="input__control" placeholder="Search...">
+                <div class="input">
+                    <input class="input__control" placeholder="Search...">
                     <svg class="input__icon">
                         <use xlink:href="img/svg/icons-sprite.svg#search">
                         </use>
@@ -312,17 +313,86 @@
         </aside>
         <div class="modal">
             <div class="modal__content">
-                <div class="modal__content-row">
-                    <label class="modal__content-column_small" for="input-1">
+                <div class="modal__form-field">
+                   <label class="modal__label" for="input-1">
                         Введите название канала
                     </label>
-                    <input class="input__control modal__content-column_big" id="input-1" />
+                    <div class="input">
+                        <input class="input__control" id="input-1" />
+                    </div> 
                 </div>
-                <div class="modal__content-row">
-                    <label class="modal__content-column_small" for="input-2">
+                <div class="modal__form-field">
+                    <label class="modal__label" for="input-2">
                         Выберите участников
                     </label>
-                    <input class="input__control modal__content-column_big" id="input-2" />
+                    <div class="input">
+                        <input class="input__control"  id="input-2" placeholder="Search...">
+                        <svg class="input__icon">
+                            <use xlink:href="img/svg/icons-sprite.svg#search">
+                            </use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="friends">
+                    <ul class="friends__list modal__list">
+                        <li class="friends__list-item">
+                            <figure class="avatar">
+                                <img class="avatar__img" src="img/jpg/avatar.jpg" alt="avatar"/>
+                                <figcaption class="avatar__caption">
+                                    Orlando Diggs
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="friends__list-item">
+                            <figure class="avatar">
+                                <img class="avatar__img" src="img/jpg/avatar.jpg" alt="avatar"/>
+                                <figcaption class="avatar__caption">
+                                    Orlando Diggs
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="friends__list-item">
+                            <figure class="avatar">
+                                <img class="avatar__img" src="img/jpg/avatar.jpg" alt="avatar"/>
+                                <figcaption class="avatar__caption">
+                                    Orlando Diggs
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="friends__list-item">
+                            <figure class="avatar">
+                                <img class="avatar__img" src="img/jpg/avatar.jpg" alt="avatar"/>
+                                <figcaption class="avatar__caption">
+                                    Orlando Diggs
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="friends__list-item">
+                            <figure class="avatar">
+                                <img class="avatar__img" src="img/jpg/avatar.jpg" alt="avatar"/>
+                                <figcaption class="avatar__caption">
+                                    Orlando Diggs
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="friends__list-item">
+                            <figure class="avatar">
+                                <img class="avatar__img" src="img/jpg/avatar.jpg" alt="avatar"/>
+                                <figcaption class="avatar__caption">
+                                    Orlando Diggs
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="delimiter"></div>
+                <div class="modal__buttons">
+                    <button class="modal__button">
+                        Отменить
+                    </button>
+                    <button class="modal__button">
+                        Создать
+                    </button>
                 </div>
             </div>
         </div>
